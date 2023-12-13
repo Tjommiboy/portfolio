@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Homepage for Anand Chetty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@500&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@500&family=Quicksand&family=Whisper&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@500&family=Poppins:wght@500&family=Quicksand&family=Whisper&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="./scripts/index.js" type="module"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="subcontainer"></div>
+          <nav class="navbar">
+            <a href="index.html">
+                <div class="main-logo">
+                <h1 class="h1class">Frontend Developer</h1>
+                <p class="mittnavn">Anand Chetty</p>
+            </div>
+        </a>
+            <ul class="nav-menu">
+           
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Homepage</a>
+              </li>
+            
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+          <main>
+            <div class="contact-container">
+                <h1 class="h1">Contact Me</h1>
+                <div class="divider">
+              <section>
+                    
+                    <form action="#" method="post" id="contact-form">
+                   <fieldset class="fieldset">
+                    <legend class="legend">Your details:</legend>
+                    <label class="form" for="name">Name:</label>
+                    <input class="input" type="text" id="name" name="name" required minlength="5"><br>
+        
+                    <label  class="form" for="email">Email:</label>
+                    <input class="input" type="email" id="email" name="email" required><br>
+        
+                    <label class="form"for="subject">Subject:</label>
+                    <input class="input" type="text" id="subject" name="subject" required minlength="15"><br>
+        
+                    <label class="form" for="message">Message:</label>
+                    <textarea class="textarea" id="message" name="message" required minlength="25"></textarea><br>
+        
+                    <button   class="Submitbtn" type="submit">Submit</button>
+                  </fieldset>
+                </form>
+              </section>
+                  <div class="">
+                    <img
+                      class="modularsynth"
+                      src="Pictures/photo-1600148272607-7bbf03a40d3b.jpg"
+                      alt="modular synth"
+                    />
+                  </div>
+                </div>
+          
+               
+               
+            
+                    <div id="error-messages">
+                    </div>
+        
+        </main>
+</body>
+</html>
