@@ -122,7 +122,7 @@ h2 {
 .myselfInfo {
   padding: 10px;
   width: 100%;
-  font-size: var(--step--2);
+  font-size: var(--step--1);
 }
 .myUl {
   list-style: none;
