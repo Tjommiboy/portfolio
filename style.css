@@ -1,10 +1,11 @@
 :root {
   --main-color: #e1f5f2;
-  --font-color: rgb(126 194 255 / 88%);
+  --font-color: rgb(14 164 178 / 90%);
   --container-color: #e1f5f2c7;
   --post-color: #e1f5f26b;
   --card-background: #f6ede1;
   --easy-pink: #f6ded9;
+  ..;
 }
 :root {
   --step--2: clamp(0.5206rem, 0.419rem + 0.508vw, 0.8rem);
@@ -49,7 +50,7 @@ body {
 /*-------------------------*/
 h2 {
   font-family: "poppins", sans-serif;
-  color: rgb(126 194 255 / 88%);
+  color: rgb(14 164 178 / 90%);
   padding: 10px;
   font-size: var(--step-1);
 }
@@ -386,9 +387,13 @@ a {
 }
 
 .mittfjes {
-  width: 60%;
-  height: 80%;
+  width: min(74%, 400px);
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
   border-radius: 5px;
+  position: relative;
+  margin-right: 28%;
+  top: -40px;
 }
 .mittfjes-centered {
   justify-content: center;
@@ -543,6 +548,15 @@ a {
 }
 
 @media (max-width: 393px) {
+  body {
+    background-color: rgba(0, 0, 255, 0.681);
+    font-family: "poppins";
+    background-image: url(./pictures/greg-becker-sYzFIusQp3Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 201vh;
+  }
   .card-container {
     display: block;
   }
