@@ -28,7 +28,13 @@
   padding: 0;
   margin: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
+  background-color: rgba(0, 0, 255, 0.681);
   font-family: "poppins";
   background-image: url(./pictures/greg-becker-sYzFIusQp3Q-unsplash.jpg);
   background-size: cover;
@@ -102,6 +108,11 @@ h2 {
   line-height: 30px;
   list-style-type: none;
 }
+.mailto {
+  color: var(--font-color);
+  transition: color 0.5s;
+}
+
 .myinfocard {
   margin: auto;
   width: 50%;
@@ -151,7 +162,7 @@ h2 {
   font-size: var(--step--2);
 }
 .warpbutton {
-  height: 50px;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
   border: none;
@@ -161,6 +172,15 @@ h2 {
   background-color: var(--font-color);
   color: white;
   font-size: var(--mini-step-3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .warpbutton:hover {
@@ -173,7 +193,7 @@ h2 {
     background-color: rgb(214, 232, 255, 0.78);
   }
   100% {
-    background-color: rgba(214, 157, 22, 0.78); /* Darker shade of blue */
+    background-color: rgba(214, 157, 22, 0.78);
   }
 }
 
@@ -327,8 +347,8 @@ a {
   align-items: center;
 }
 .divider {
-  justify-content: center;
-  display: flex;
+  grid-template-columns: 50% 50%;
+  display: grid;
   top: 5em;
   position: relative;
 }
@@ -360,7 +380,20 @@ a {
   margin-top: 1em;
   color: var(--font-color);
 }
+.form-centered {
+  justify-content: center;
+  display: flex;
+}
 
+.mittfjes {
+  width: 60%;
+  height: 80%;
+  border-radius: 5px;
+}
+.mittfjes-centered {
+  justify-content: center;
+  display: flex;
+}
 .form:first-of-type {
   margin-top: -1em;
 }
@@ -457,9 +490,9 @@ a {
   }
   .nav-item {
     margin: 0px;
-    background-color: var(--container-color);
+    background-color: #e1f5f2;
     padding: 10px;
-    border: 1px solid;
+
     width: 164px;
   }
   .nav-menu.active {
@@ -495,6 +528,13 @@ a {
     width: min(90%, 1440px);
     height: 500px;
   }
+  .myface {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 10%;
+    position: relative;
+  }
   .myinfocard {
     margin: auto;
     width: 200%;
@@ -506,14 +546,45 @@ a {
   .card-container {
     display: block;
   }
-
-  body {
-    overflow-x: hidden;
+  h1 {
+    font-size: var(--step-3);
   }
+  .h1class {
+    margin-left: 60px;
+  }
+
   .portfolio_img {
     width: 88%;
   }
   .warpbutton {
     width: 88%;
+  }
+  .card {
+    width: 90%;
+  }
+  .info-container {
+    top: 10px;
+  }
+  .card-container {
+    width: 90%;
+    top: -70px;
+  }
+
+  .portfolio_img,
+  .warpbutton {
+    width: 100%;
+  }
+  .divider {
+    grid-template-columns: 50% 50%;
+    display: block;
+    top: 5em;
+    position: relative;
+  }
+  .contact-container {
+    top: 10px;
+    width: 90%;
+  }
+  .mittfjes-centered {
+    display: none;
   }
 }
